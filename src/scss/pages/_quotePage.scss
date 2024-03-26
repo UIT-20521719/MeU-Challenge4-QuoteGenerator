@@ -1,8 +1,42 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 100vh;
-  width: 100vw;
+.quotePage {
+  height: 70%;
+  .quoteAuthor {
+    width: 30%;
+    a {
+      text-decoration: none;
+    }
+    .btn {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      padding: 40px 25px;
+      margin-top: 40px;
+      border-radius: 0.3rem;
+      background-color: #fff;
+      color: #fff;
+
+      &__info {
+        font-size: 0.8rem;
+        color: #828282;
+
+        &__name {
+          color: #4f4f4f;
+          font-size: 1.2rem;
+          margin-bottom: 0.5rem;
+        }
+      }
+
+      &:hover {
+        background-color: #333;
+        color: #f2f2f2;
+        transition: 0.3s;
+
+        .btn__info__name {
+          color: #f2f2f2 !important;
+        }
+      }
+    }
+  }
 }
